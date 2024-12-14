@@ -1,0 +1,222 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 1%;
+    margin: 2% 10%;
+    border: 1em solid #010655;
+    border-radius:10px;
+}
+.name-person {
+    margin: 0;
+    margin-top: 2%;
+}
+h2 {
+    color: #010655;
+    font-size: large;
+
+    width: fit-content;
+    /* Reset les marges par défaut sur le titre 2 */
+    margin: 0;
+}
+p {
+    margin: 0px;
+}
+ul {
+    margin: 0.5em 0 1em 0;
+    position: relative;
+    right: 1.5em;
+}
+hr {
+    width: 74%;
+    margin-left: 21.5%;
+    margin-right: 3%;
+    border:none;
+    border-top: 0.15em solid #b8b7b7;
+    background-color: #b8b7b7;
+}
+header,
+.margin-section {
+    margin: 1% 0;
+
+    display: flex;
+    gap: 2em;
+}
+.margin-flex {
+    flex-basis: 20%;
+
+    display: flex;
+    justify-content: end;
+}
+.main-flex {
+    flex-basis: 80%;
+}
+.education-title {
+    width: 6em;
+    text-align: right;
+    overflow: hidden;
+}
+.contact-details {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.contact-details div {
+    height: 1.3em;
+    display: flex;
+    gap: 0.5em;
+}
+.contact-details div img {
+    object-fit: contain;
+    max-width: 1em;
+    height:auto;
+}
+#actual-job {
+    margin-top: 1em;
+    color: #010655;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+.job-details {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.job-title {
+    color: black;
+}
+
+.progress-section {
+    height: 5.2em;
+}
+
+.main-flex:has(> .progress-container) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15% 20%;
+}
+.progress-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.progress_label {
+    font-weight: 700;
+}
+progress::-webkit-progress-value {
+    background-color: #010655;
+}
+progress {   
+    border-radius: 20px;
+    overflow: hidden;
+}
+progress::-webkit-progress-bar {
+    background-color: #ababab;
+}
+.loisirs-section{
+    height: 4.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.loisir-container {
+    display: flex;
+    align-content: start;
+    gap:0.3em;
+}
+.check {
+    height: 0.65em;
+    width: 0.25em;
+
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    margin: 0.2em 0.5em;
+}
+
+.customise_form {
+    max-width: 72%; 
+    margin: 50px auto; /* Centrage du formulaire sur la page */
+    padding: 20px;
+}
+
+form {
+    background-color: #f8f9fa; 
+    border: 5px solid #010655; 
+    border-radius: 20px; 
+    padding: 1rem; 
+    width: 100%; 
+}
+
+#title-form{
+    color: #010655;
+}
+
+form div {
+    margin-bottom: 0.2rem;
+}
+
+form label {
+    color: #010655; 
+    font-weight: 600;
+    font-size: 16px; 
+    margin-bottom: 0.5rem; 
+}
+
+form input, 
+form textarea {
+    width: 100%; 
+    padding: 0.8rem 1rem; 
+    border: 1px solid #010655; 
+    border-radius: 15px; 
+    font-family: 'Open Sans', Arial, sans-serif; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+form input:focus, 
+form textarea:focus {
+    outline: none; 
+    border-color: #0056b3; /* Change la couleur de la bordure au focus */
+    box-shadow: 0 0 10px rgba(1, 6, 85, 0.3); /* Effet de halo au focus */
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="tel"] {
+    width: 100%; /* Les inputs de type text, email, et tel prennent la largeur maximale */
+}
+
+form textarea {
+    height: 120px; /* Hauteur personnalisée du textarea */
+    resize: vertical; /* Autoriser uniquement le redimensionnement vertical */
+}
+
+.form-button-container {
+    width: 20%;;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    bo
+}
+
+.submit-button {
+   
+    font-size: 18px; 
+    background-color: #010655; 
+    color: #fff;
+    border: none;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-3px); 
+}
+
